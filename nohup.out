@@ -1,0 +1,700 @@
+[08/Aug/2016 21:30:50] "GET / HTTP/1.1" 200 4490
+[08/Aug/2016 21:30:50] "GET /static/assets/js/skel.min.js HTTP/1.1" 200 9085
+[08/Aug/2016 21:30:50] "GET /static/assets/js/util.js HTTP/1.1" 200 12433
+[08/Aug/2016 21:30:50] "GET /static/images/baby_sitting.jpeg HTTP/1.1" 304 0
+[08/Aug/2016 21:30:50] "GET /static/assets/js/jquery.scrollgress.min.js HTTP/1.1" 200 2894
+[08/Aug/2016 21:30:50] "GET /static/assets/js/main.js HTTP/1.1" 200 2303
+[08/Aug/2016 21:30:50] "GET /static/assets/js/jquery.dropotron.min.js HTTP/1.1" 200 5106
+[08/Aug/2016 21:30:50] "GET /static/assets/js/jquery.min.js HTTP/1.1" 304 0
+[08/Aug/2016 21:30:50] "GET /static/assets/css/main.css HTTP/1.1" 200 62195
+[08/Aug/2016 21:30:50] "GET /static/assets/css/font-awesome.min.css HTTP/1.1" 200 29063
+[08/Aug/2016 21:30:50] "GET /static/assets/css/images/overlay.png HTTP/1.1" 304 0
+[08/Aug/2016 21:30:50] "GET /static/assets/fonts/fontawesome-webfont.woff?v=4.6.3 HTTP/1.1" 200 90412
+[08/Aug/2016 21:30:51] "GET /static/images/baby_feet.jpg HTTP/1.1" 200 998241
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 08, 2016 - 21:30:39
+Django version 1.9.2, using settings 'fitbaby.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 08, 2016 - 21:58:22
+Django version 1.9.2, using settings 'fitbaby.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <function wrapper at 0x7f1c8a9c8410>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/commands/runserver.py", line 116, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 426, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/registry.py", line 75, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 10, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 19, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/ubuntu/fitbaby/fitbaby/urls.py", line 20, in <module>
+    url(r'^', include('polls.urls')),
+  File "/usr/local/lib/python2.7/dist-packages/django/conf/urls/__init__.py", line 52, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/ubuntu/fitbaby/polls/urls.py", line 8, in <module>
+    url(r'^(?P<question_id>[0-9]+)/$', views.detail, name='detail'),
+AttributeError: 'module' object has no attribute 'detail'
+Unhandled exception in thread started by <function wrapper at 0x7fbc0ea05410>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/commands/runserver.py", line 116, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 426, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/registry.py", line 75, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 10, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 19, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/ubuntu/fitbaby/fitbaby/urls.py", line 20, in <module>
+    url(r'^', include('polls.urls')),
+  File "/usr/local/lib/python2.7/dist-packages/django/conf/urls/__init__.py", line 52, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/ubuntu/fitbaby/polls/urls.py", line 8, in <module>
+    url(r'^setup$', views.detail, name='detail'),
+AttributeError: 'module' object has no attribute 'detail'
+Unhandled exception in thread started by <function wrapper at 0x7f33d6a67410>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/commands/runserver.py", line 116, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 426, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/registry.py", line 75, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 10, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 19, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/ubuntu/fitbaby/fitbaby/urls.py", line 20, in <module>
+    url(r'^', include('polls.urls')),
+  File "/usr/local/lib/python2.7/dist-packages/django/conf/urls/__init__.py", line 52, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/ubuntu/fitbaby/polls/urls.py", line 8, in <module>
+    url(r'^setup/', views.detail, name='setup'),
+AttributeError: 'module' object has no attribute 'detail'
+Unhandled exception in thread started by <function wrapper at 0x7fd08dc0f410>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/commands/runserver.py", line 116, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 426, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/registry.py", line 75, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 10, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 19, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/ubuntu/fitbaby/fitbaby/urls.py", line 20, in <module>
+    url(r'^', include('polls.urls')),
+  File "/usr/local/lib/python2.7/dist-packages/django/conf/urls/__init__.py", line 52, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/ubuntu/fitbaby/polls/urls.py", line 8, in <module>
+    url(r'^setup/', views.detail, name='setup'),
+AttributeError: 'module' object has no attribute 'detail'
+Unhandled exception in thread started by <function wrapper at 0x7fd217665410>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/commands/runserver.py", line 116, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 426, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/registry.py", line 75, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 10, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 19, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/ubuntu/fitbaby/fitbaby/urls.py", line 20, in <module>
+    url(r'^', include('polls.urls')),
+  File "/usr/local/lib/python2.7/dist-packages/django/conf/urls/__init__.py", line 52, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/ubuntu/fitbaby/polls/urls.py", line 8, in <module>
+    url(r'^signup/', views.detail, name='setup'),
+AttributeError: 'module' object has no attribute 'detail'
+Unhandled exception in thread started by <function wrapper at 0x7f1758bbb410>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/commands/runserver.py", line 116, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 426, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/registry.py", line 75, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 10, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 19, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/ubuntu/fitbaby/fitbaby/urls.py", line 20, in <module>
+    url(r'^', include('polls.urls')),
+  File "/usr/local/lib/python2.7/dist-packages/django/conf/urls/__init__.py", line 52, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/ubuntu/fitbaby/polls/urls.py", line 8, in <module>
+    url(r'^signup/', views.detail, name='setup'),
+AttributeError: 'module' object has no attribute 'detail'
+Unhandled exception in thread started by <function wrapper at 0x7f09d6371410>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/commands/runserver.py", line 116, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 426, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/registry.py", line 75, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 10, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 19, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/ubuntu/fitbaby/fitbaby/urls.py", line 20, in <module>
+    url(r'^', include('polls.urls')),
+  File "/usr/local/lib/python2.7/dist-packages/django/conf/urls/__init__.py", line 52, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/ubuntu/fitbaby/polls/urls.py", line 8, in <module>
+    url(r'^signup/', views.detail, name='setup'),
+AttributeError: 'module' object has no attribute 'detail'
+[08/Aug/2016 22:20:15] "GET / HTTP/1.1" 200 4490
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 08, 2016 - 22:20:08
+Django version 1.9.2, using settings 'fitbaby.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Not Found: /signup.html
+[08/Aug/2016 22:21:42] "GET /signup.html HTTP/1.1" 404 2273
+Not Found: /signup.html
+[08/Aug/2016 22:21:45] "GET /signup.html HTTP/1.1" 404 2273
+[08/Aug/2016 22:22:31] "GET / HTTP/1.1" 200 4490
+[08/Aug/2016 22:22:31] "GET /static/images/baby_sitting.jpeg HTTP/1.1" 304 0
+[08/Aug/2016 22:22:31] "GET /static/assets/js/jquery.scrollgress.min.js HTTP/1.1" 304 0
+[08/Aug/2016 22:22:31] "GET /static/assets/css/main.css HTTP/1.1" 304 0
+[08/Aug/2016 22:22:31] "GET /static/assets/js/jquery.dropotron.min.js HTTP/1.1" 304 0
+[08/Aug/2016 22:22:31] "GET /static/assets/js/skel.min.js HTTP/1.1" 304 0
+[08/Aug/2016 22:22:31] "GET /static/assets/js/jquery.min.js HTTP/1.1" 304 0
+[08/Aug/2016 22:22:31] "GET /static/assets/js/util.js HTTP/1.1" 304 0
+[08/Aug/2016 22:22:31] "GET /static/assets/js/main.js HTTP/1.1" 304 0
+[08/Aug/2016 22:22:31] "GET /static/assets/css/font-awesome.min.css HTTP/1.1" 304 0
+[08/Aug/2016 22:22:31] "GET /static/assets/css/images/overlay.png HTTP/1.1" 304 0
+[08/Aug/2016 22:22:31] "GET /static/images/baby_feet.jpg HTTP/1.1" 304 0
+[08/Aug/2016 22:22:31] "GET /static/assets/fonts/fontawesome-webfont.woff?v=4.6.3 HTTP/1.1" 304 0
+Not Found: /signup.html
+[08/Aug/2016 22:22:34] "GET /signup.html HTTP/1.1" 404 2273
+Not Found: /signup.html/
+[08/Aug/2016 22:22:55] "GET /signup.html/ HTTP/1.1" 404 2276
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 08, 2016 - 22:22:27
+Django version 1.9.2, using settings 'fitbaby.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 08, 2016 - 22:23:25
+Django version 1.9.2, using settings 'fitbaby.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[09/Aug/2016 04:38:54] "GET / HTTP/1.1" 200 4449
+[09/Aug/2016 04:38:55] "GET /signup/ HTTP/1.1" 200 3248
+[09/Aug/2016 05:47:41] "GET / HTTP/1.1" 200 4449
+[09/Aug/2016 05:47:41] "GET /static/assets/js/main.js HTTP/1.1" 200 2303
+[09/Aug/2016 05:47:41] "GET /static/assets/js/jquery.dropotron.min.js HTTP/1.1" 200 5106
+[09/Aug/2016 05:47:41] "GET /static/assets/css/main.css HTTP/1.1" 304 0
+[09/Aug/2016 05:47:41] "GET /static/images/baby_sitting.jpeg HTTP/1.1" 304 0
+[09/Aug/2016 05:47:41] "GET /static/assets/js/jquery.scrollgress.min.js HTTP/1.1" 304 0
+[09/Aug/2016 05:47:41] "GET /static/assets/js/jquery.min.js HTTP/1.1" 200 95957
+[09/Aug/2016 05:47:41] "GET /static/assets/js/skel.min.js HTTP/1.1" 304 0
+[09/Aug/2016 05:47:41] "GET /static/assets/js/util.js HTTP/1.1" 304 0
+[09/Aug/2016 05:47:41] "GET /static/assets/css/font-awesome.min.css HTTP/1.1" 304 0
+[09/Aug/2016 05:47:41] "GET /static/images/baby_feet.jpg HTTP/1.1" 304 0
+[09/Aug/2016 05:47:41] "GET /static/assets/css/images/overlay.png HTTP/1.1" 304 0
+[09/Aug/2016 05:47:41] "GET /static/assets/fonts/fontawesome-webfont.woff?v=4.6.3 HTTP/1.1" 304 0
+[09/Aug/2016 06:40:16] "GET / HTTP/1.1" 200 4449
+[09/Aug/2016 06:40:22] "GET /signup/ HTTP/1.1" 200 3248
+[09/Aug/2016 06:40:26] "GET / HTTP/1.1" 200 4449
+Not Found: /http:/www.baidu.com/cache/global/img/gs.gif
+[09/Aug/2016 09:08:43] "GET http://www.baidu.com/cache/global/img/gs.gif HTTP/1.1" 404 1729
+[09/Aug/2016 18:09:39] "GET / HTTP/1.1" 200 4449
+Not Found: /favicon.ico
+[09/Aug/2016 18:09:39] "GET /favicon.ico HTTP/1.1" 404 2274
+[09/Aug/2016 20:44:31] "GET / HTTP/1.1" 200 4449
+[09/Aug/2016 20:44:31] "GET /static/assets/css/main.css HTTP/1.1" 304 0
+[09/Aug/2016 20:44:31] "GET /static/assets/js/jquery.min.js HTTP/1.1" 304 0
+[09/Aug/2016 20:44:31] "GET /static/images/baby_sitting.jpeg HTTP/1.1" 304 0
+[09/Aug/2016 20:44:31] "GET /static/assets/js/jquery.dropotron.min.js HTTP/1.1" 304 0
+[09/Aug/2016 20:44:31] "GET /static/assets/js/jquery.scrollgress.min.js HTTP/1.1" 304 0
+[09/Aug/2016 20:44:31] "GET /static/assets/css/font-awesome.min.css HTTP/1.1" 304 0
+[09/Aug/2016 20:44:31] "GET /static/assets/js/skel.min.js HTTP/1.1" 304 0
+[09/Aug/2016 20:44:31] "GET /static/assets/js/util.js HTTP/1.1" 304 0
+[09/Aug/2016 20:44:31] "GET /static/assets/js/main.js HTTP/1.1" 304 0
+[09/Aug/2016 20:44:31] "GET /static/assets/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 304 0
+[09/Aug/2016 20:44:31] "GET /static/assets/css/images/overlay.png HTTP/1.1" 304 0
+[09/Aug/2016 20:44:31] "GET /static/images/baby_feet.jpg HTTP/1.1" 304 0
+[09/Aug/2016 20:44:44] "GET /signup/ HTTP/1.1" 200 3248
+[09/Aug/2016 20:44:49] "GET / HTTP/1.1" 200 4449
+[09/Aug/2016 20:44:50] "GET /signup/ HTTP/1.1" 200 3248
+[09/Aug/2016 20:44:52] "GET / HTTP/1.1" 200 4449
+[09/Aug/2016 20:45:14] "GET /signup/ HTTP/1.1" 200 3248
+Not Found: /favicon.ico
+[09/Aug/2016 21:15:34] "GET /favicon.ico HTTP/1.1" 404 2274
+[09/Aug/2016 22:59:26] "GET / HTTP/1.1" 200 4449
+Not Found: /robots.txt
+[09/Aug/2016 22:59:26] "GET /robots.txt HTTP/1.1" 404 2271
+Not Found: /sitemap.xml
+[09/Aug/2016 22:59:26] "GET /sitemap.xml HTTP/1.1" 404 2274
+[09/Aug/2016 23:49:55] "GET / HTTP/1.1" 200 4449
+[09/Aug/2016 23:49:56] "GET /static/assets/js/jquery.min.js HTTP/1.1" 200 95957
+[09/Aug/2016 23:49:56] "GET /static/assets/css/main.css HTTP/1.1" 200 62195
+[09/Aug/2016 23:49:56] "GET /static/assets/css/font-awesome.min.css HTTP/1.1" 200 29063
+[09/Aug/2016 23:49:56] "GET /static/assets/js/jquery.dropotron.min.js HTTP/1.1" 200 5106
+[09/Aug/2016 23:49:56] "GET /static/assets/js/jquery.scrollgress.min.js HTTP/1.1" 200 2894
+[09/Aug/2016 23:49:56] "GET /static/assets/js/skel.min.js HTTP/1.1" 200 9085
+[09/Aug/2016 23:49:56] "GET /static/assets/js/util.js HTTP/1.1" 200 12433
+[09/Aug/2016 23:49:56] "GET /static/assets/js/main.js HTTP/1.1" 200 2303
+[09/Aug/2016 23:49:56] "GET /static/assets/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 200 71896
+[09/Aug/2016 23:49:56] "GET /static/assets/css/images/overlay.png HTTP/1.1" 200 28136
+[09/Aug/2016 23:49:57] "GET /static/images/baby_sitting.jpeg HTTP/1.1" 200 2540745
+[09/Aug/2016 23:49:57] "GET /static/images/baby_feet.jpg HTTP/1.1" 200 998241
+Not Found: /favicon.ico
+[09/Aug/2016 23:49:57] "GET /favicon.ico HTTP/1.1" 404 2274
+[09/Aug/2016 23:50:08] "GET /signup/ HTTP/1.1" 200 3248
+[09/Aug/2016 23:50:10] "GET / HTTP/1.1" 200 4449
+[10/Aug/2016 05:00:05] "GET /signup/ HTTP/1.1" 200 3248
+[10/Aug/2016 05:00:08] "GET / HTTP/1.1" 200 4449
+[10/Aug/2016 05:01:10] "GET /signup/ HTTP/1.1" 200 3248
+[10/Aug/2016 08:32:52] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00')
+[10/Aug/2016 08:32:52] "    c                           " 400 -
+Not Found: /http:/www.baidu.com/cache/global/img/gs.gif
+[10/Aug/2016 08:56:32] "GET http://www.baidu.com/cache/global/img/gs.gif HTTP/1.1" 404 1729
+[10/Aug/2016 20:20:16] "GET / HTTP/1.1" 200 4449
+Not Found: /http:/www.baidu.com/cache/global/img/gs.gif
+[11/Aug/2016 01:27:05] "GET http://www.baidu.com/cache/global/img/gs.gif HTTP/1.1" 404 1729
+Not Found: /favicon.ico
+[11/Aug/2016 04:28:58] "GET /favicon.ico HTTP/1.1" 404 2274
+Not Found: /http:/www.baidu.com/cache/global/img/gs.gif
+[11/Aug/2016 13:31:40] "GET http://www.baidu.com/cache/global/img/gs.gif HTTP/1.1" 404 1729
+Not Found: /favicon.ico
+[11/Aug/2016 17:20:12] "GET /favicon.ico HTTP/1.1" 404 2274
+[11/Aug/2016 20:23:10] "GET / HTTP/1.1" 200 4449
+[11/Aug/2016 20:23:10] "GET /static/assets/js/jquery.dropotron.min.js HTTP/1.1" 200 5106
+[11/Aug/2016 20:23:10] "GET /static/assets/js/jquery.scrollgress.min.js HTTP/1.1" 200 2894
+[11/Aug/2016 20:23:10] "GET /static/assets/js/skel.min.js HTTP/1.1" 200 9085
+[11/Aug/2016 20:23:10] "GET /static/assets/js/util.js HTTP/1.1" 200 12433
+[11/Aug/2016 20:23:10] "GET /static/assets/js/main.js HTTP/1.1" 200 2303
+[11/Aug/2016 20:23:10] "GET /static/assets/js/jquery.min.js HTTP/1.1" 200 95957
+[11/Aug/2016 20:23:11] "GET /static/assets/css/main.css HTTP/1.1" 200 62195
+[11/Aug/2016 20:23:11] "GET /static/assets/css/font-awesome.min.css HTTP/1.1" 200 29063
+[11/Aug/2016 20:23:11] "GET /static/images/baby_sitting.jpeg HTTP/1.1" 200 2540745
+[11/Aug/2016 20:23:11] "GET /static/assets/css/images/overlay.png HTTP/1.1" 200 28136
+[11/Aug/2016 20:23:11] "GET /static/assets/fonts/fontawesome-webfont.woff?v=4.6.3 HTTP/1.1" 200 90412
+[11/Aug/2016 20:23:11] "GET /static/images/baby_feet.jpg HTTP/1.1" 200 998241
+Not Found: /favicon.ico
+[11/Aug/2016 20:23:11] "GET /favicon.ico HTTP/1.1" 404 2274
+[11/Aug/2016 20:23:28] "GET /signup/ HTTP/1.1" 200 3248
+Forbidden (CSRF cookie not set.): /signup/
+[11/Aug/2016 20:23:32] "POST /signup/ HTTP/1.1" 403 2629
+[11/Aug/2016 20:23:37] "GET / HTTP/1.1" 200 4449
+[11/Aug/2016 20:23:41] "GET /signup/ HTTP/1.1" 200 3248
+[11/Aug/2016 20:23:43] "GET / HTTP/1.1" 200 4449
+[11/Aug/2016 20:23:52] "GET /signup/ HTTP/1.1" 200 3248
+[11/Aug/2016 20:24:00] "GET / HTTP/1.1" 200 4449
+[11/Aug/2016 21:01:57] "GET / HTTP/1.1" 200 4449
+[11/Aug/2016 21:01:59] "GET /static/assets/css/main.css HTTP/1.1" 200 62195
+[11/Aug/2016 21:01:59] "GET /static/assets/js/jquery.min.js HTTP/1.1" 200 95957
+[11/Aug/2016 21:01:59] "GET /static/images/baby_sitting.jpeg HTTP/1.1" 200 2540745
+[11/Aug/2016 21:01:59] "GET /static/assets/js/jquery.dropotron.min.js HTTP/1.1" 200 5106
+[11/Aug/2016 21:01:59] "GET /static/assets/js/jquery.scrollgress.min.js HTTP/1.1" 200 2894
+[11/Aug/2016 21:01:59] "GET /static/assets/js/skel.min.js HTTP/1.1" 200 9085
+[11/Aug/2016 21:01:59] "GET /static/assets/js/main.js HTTP/1.1" 200 2303
+[11/Aug/2016 21:01:59] "GET /static/assets/css/font-awesome.min.css HTTP/1.1" 200 29063
+[11/Aug/2016 21:01:59] "GET /static/assets/js/util.js HTTP/1.1" 200 12433
+[11/Aug/2016 21:01:59] "GET /static/assets/css/images/overlay.png HTTP/1.1" 200 28136
+[11/Aug/2016 21:01:59] "GET /static/assets/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 200 71896
+[11/Aug/2016 21:01:59] "GET /static/images/baby_feet.jpg HTTP/1.1" 200 998241
+Not Found: /favicon.ico
+[11/Aug/2016 21:01:59] "GET /favicon.ico HTTP/1.1" 404 2274
+[11/Aug/2016 21:02:09] "GET /signup/ HTTP/1.1" 200 3248
+[11/Aug/2016 22:04:18] "GET / HTTP/1.1" 200 4449
+[12/Aug/2016 05:32:18] "GET / HTTP/1.1" 200 4449
+Not Found: /favicon.ico
+[12/Aug/2016 05:32:18] "GET /favicon.ico HTTP/1.1" 404 2274
+Not Found: /http:/www.baidu.com/cache/global/img/gs.gif
+[12/Aug/2016 17:44:18] "GET http://www.baidu.com/cache/global/img/gs.gif HTTP/1.1" 404 1729
+Not Found: /http:/www.baidu.com/cache/global/img/gs.gif
+[12/Aug/2016 18:04:18] "GET http://www.baidu.com/cache/global/img/gs.gif HTTP/1.1" 404 1729
+[12/Aug/2016 19:59:30] "GET / HTTP/1.1" 200 4449
+Not Found: /favicon.ico
+[12/Aug/2016 19:59:30] "GET /favicon.ico HTTP/1.1" 404 2274
+[12/Aug/2016 19:59:41] "GET / HTTP/1.1" 200 4449
+[12/Aug/2016 19:59:41] "GET /static/assets/css/main.css HTTP/1.1" 200 62195
+[12/Aug/2016 19:59:41] "GET /static/assets/js/jquery.min.js HTTP/1.1" 200 95957
+[12/Aug/2016 19:59:41] "GET /static/assets/js/jquery.dropotron.min.js HTTP/1.1" 200 5106
+[12/Aug/2016 19:59:41] "GET /static/assets/css/font-awesome.min.css HTTP/1.1" 200 29063
+[12/Aug/2016 19:59:41] "GET /static/assets/js/util.js HTTP/1.1" 200 12433
+[12/Aug/2016 19:59:41] "GET /static/assets/js/jquery.scrollgress.min.js HTTP/1.1" 200 2894
+[12/Aug/2016 19:59:41] "GET /static/assets/js/skel.min.js HTTP/1.1" 200 9085
+[12/Aug/2016 19:59:41] "GET /static/assets/js/main.js HTTP/1.1" 200 2303
+[12/Aug/2016 19:59:41] "GET /static/assets/css/images/overlay.png HTTP/1.1" 200 28136
+[12/Aug/2016 19:59:41] "GET /static/assets/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 200 71896
+[12/Aug/2016 19:59:41] "GET /static/images/baby_feet.jpg HTTP/1.1" 200 998241
+[12/Aug/2016 19:59:41] "GET /static/images/baby_sitting.jpeg HTTP/1.1" 200 2540745
+Not Found: /favicon.ico
+[12/Aug/2016 19:59:42] "GET /favicon.ico HTTP/1.1" 404 2274
+[13/Aug/2016 19:11:47] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01\xfc\x03\x03\x1a7s\x8ae\xd9X\xe6\x0e3\xe1\xce\x89\x04tBm\x83\xdbx\xff#\x19\xb4\xcb\x8a\xd4\x96')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+[13/Aug/2016 19:11:56] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01\xfc\x03\x03r\xb7\xe4\xdc\xddOt\xf6c\xc2\xb0Wg\x81\xcbRc4\xd0\xf50\xb9')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+[13/Aug/2016 20:41:19] "GET / HTTP/1.1" 200 4449
+Not Found: /favicon.ico
+[13/Aug/2016 20:41:19] "GET /favicon.ico HTTP/1.1" 404 2274
+[13/Aug/2016 22:06:34] "GET / HTTP/1.1" 200 4449
+Not Found: /favicon.ico
+[13/Aug/2016 22:06:34] "GET /favicon.ico HTTP/1.1" 404 2274
+Not Found: /http:/www.baidu.com/cache/global/img/gs.gif
+[13/Aug/2016 22:36:57] "GET http://www.baidu.com/cache/global/img/gs.gif HTTP/1.1" 404 1729
+[14/Aug/2016 03:37:25] "GET / HTTP/1.1" 200 4449
+[14/Aug/2016 03:37:25] "GET /static/assets/css/main.css HTTP/1.1" 304 0
+[14/Aug/2016 03:37:25] "GET /static/images/baby_sitting.jpeg HTTP/1.1" 304 0
+[14/Aug/2016 03:37:25] "GET /static/assets/js/jquery.min.js HTTP/1.1" 304 0
+[14/Aug/2016 03:37:25] "GET /static/assets/js/jquery.dropotron.min.js HTTP/1.1" 304 0
+[14/Aug/2016 03:37:25] "GET /static/assets/js/jquery.scrollgress.min.js HTTP/1.1" 304 0
+[14/Aug/2016 03:37:25] "GET /static/assets/css/font-awesome.min.css HTTP/1.1" 304 0
+[14/Aug/2016 03:37:25] "GET /static/assets/js/skel.min.js HTTP/1.1" 304 0
+[14/Aug/2016 03:37:25] "GET /static/assets/js/main.js HTTP/1.1" 304 0
+[14/Aug/2016 03:37:25] "GET /static/assets/js/util.js HTTP/1.1" 304 0
+[14/Aug/2016 03:37:25] "GET /static/assets/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 304 0
+[14/Aug/2016 03:37:25] "GET /static/assets/css/images/overlay.png HTTP/1.1" 304 0
+[14/Aug/2016 03:37:25] "GET /static/images/baby_feet.jpg HTTP/1.1" 304 0
+[14/Aug/2016 03:37:28] "GET /signup/ HTTP/1.1" 200 3248
+[14/Aug/2016 03:47:15] "GET /signup/ HTTP/1.1" 200 3248
+[14/Aug/2016 03:47:15] "GET /static/assets/css/font-awesome.min.css HTTP/1.1" 304 0
+[14/Aug/2016 03:47:15] "GET /static/assets/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 304 0
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 09, 2016 - 04:38:49
+Django version 1.9.2, using settings 'fitbaby.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <function wrapper at 0x7f45c08a9ed8>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/commands/runserver.py", line 116, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 426, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/registry.py", line 75, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 10, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 19, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/ubuntu/fitbaby/fitbaby/urls.py", line 20, in <module>
+    url(r'^', include('polls.urls')),
+  File "/usr/local/lib/python2.7/dist-packages/django/conf/urls/__init__.py", line 52, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/ubuntu/fitbaby/polls/urls.py", line 3, in <module>
+    from . import views
+  File "/home/ubuntu/fitbaby/polls/views.py", line 3, in <module>
+    from .forms import PostForm
+  File "/home/ubuntu/fitbaby/polls/forms.py", line 2, in <module>
+    from .models import Post
+ImportError: cannot import name Post
+Unhandled exception in thread started by <function wrapper at 0x7fc585febed8>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/commands/runserver.py", line 116, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 426, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/registry.py", line 75, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 10, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 19, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/ubuntu/fitbaby/fitbaby/urls.py", line 20, in <module>
+    url(r'^', include('polls.urls')),
+  File "/usr/local/lib/python2.7/dist-packages/django/conf/urls/__init__.py", line 52, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/ubuntu/fitbaby/polls/urls.py", line 3, in <module>
+    from . import views
+  File "/home/ubuntu/fitbaby/polls/views.py", line 3, in <module>
+    from .forms import PostForm
+  File "/home/ubuntu/fitbaby/polls/forms.py", line 4, in <module>
+    class PostForm(forms.ModelForm):
+  File "/usr/local/lib/python2.7/dist-packages/django/forms/models.py", line 257, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (Last Name, First Name, Email) specified for prospect
+Unhandled exception in thread started by <function wrapper at 0x7f20cf24bed8>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/commands/runserver.py", line 116, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 426, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/registry.py", line 75, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 10, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 19, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/ubuntu/fitbaby/fitbaby/urls.py", line 20, in <module>
+    url(r'^', include('polls.urls')),
+  File "/usr/local/lib/python2.7/dist-packages/django/conf/urls/__init__.py", line 52, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/ubuntu/fitbaby/polls/urls.py", line 3, in <module>
+    from . import views
+  File "/home/ubuntu/fitbaby/polls/views.py", line 3, in <module>
+    from .forms import PostForm
+  File "/home/ubuntu/fitbaby/polls/forms.py", line 4, in <module>
+    class PostForm(forms.ModelForm):
+  File "/usr/local/lib/python2.7/dist-packages/django/forms/models.py", line 235, in __new__
+    "needs updating." % name
+django.core.exceptions.ImproperlyConfigured: Creating a ModelForm without either the 'fields' attribute or the 'exclude' attribute is prohibited; form PostForm needs updating.
+[14/Aug/2016 08:00:15] "GET / HTTP/1.1" 200 4449
+[14/Aug/2016 08:00:17] "GET /signup/ HTTP/1.1" 200 3774
+[14/Aug/2016 08:00:36] "POST /signup/ HTTP/1.1" 302 0
+[14/Aug/2016 08:00:36] "GET / HTTP/1.1" 200 4449
+[14/Aug/2016 17:17:30] "GET / HTTP/1.1" 200 4449
+[14/Aug/2016 17:17:30] "GET /static/assets/css/main.css HTTP/1.1" 304 0
+[14/Aug/2016 17:17:30] "GET /static/images/baby_sitting.jpeg HTTP/1.1" 304 0
+[14/Aug/2016 17:17:30] "GET /static/assets/js/jquery.min.js HTTP/1.1" 304 0
+[14/Aug/2016 17:17:30] "GET /static/assets/js/jquery.dropotron.min.js HTTP/1.1" 304 0
+[14/Aug/2016 17:17:30] "GET /static/assets/js/jquery.scrollgress.min.js HTTP/1.1" 304 0
+[14/Aug/2016 17:17:30] "GET /static/assets/css/font-awesome.min.css HTTP/1.1" 304 0
+[14/Aug/2016 17:17:30] "GET /static/assets/js/skel.min.js HTTP/1.1" 304 0
+[14/Aug/2016 17:17:30] "GET /static/assets/js/util.js HTTP/1.1" 304 0
+[14/Aug/2016 17:17:30] "GET /static/assets/js/main.js HTTP/1.1" 304 0
+[14/Aug/2016 17:17:30] "GET /static/assets/css/images/overlay.png HTTP/1.1" 304 0
+[14/Aug/2016 17:17:30] "GET /static/assets/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 304 0
+[14/Aug/2016 17:17:30] "GET /static/images/baby_feet.jpg HTTP/1.1" 304 0
+[14/Aug/2016 17:17:32] "GET /signup/ HTTP/1.1" 200 3774
+[14/Aug/2016 17:18:01] "POST /signup/ HTTP/1.1" 302 0
+[14/Aug/2016 17:18:01] "GET / HTTP/1.1" 200 4449
+[14/Aug/2016 18:25:16] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00')
+[14/Aug/2016 18:25:16] "    c                           " 400 -
+[14/Aug/2016 18:33:56] "GET / HTTP/1.1" 200 4449
+[14/Aug/2016 18:33:56] "GET /static/assets/css/main.css HTTP/1.1" 200 62195
+[14/Aug/2016 18:33:56] "GET /static/assets/js/jquery.dropotron.min.js HTTP/1.1" 200 5106
+[14/Aug/2016 18:33:56] "GET /static/assets/js/jquery.scrollgress.min.js HTTP/1.1" 200 2894
+[14/Aug/2016 18:33:56] "GET /static/assets/js/skel.min.js HTTP/1.1" 200 9085
+[14/Aug/2016 18:33:56] "GET /static/assets/js/util.js HTTP/1.1" 200 12433
+[14/Aug/2016 18:33:56] "GET /static/assets/js/jquery.min.js HTTP/1.1" 200 95957
+[14/Aug/2016 18:33:56] "GET /static/assets/js/main.js HTTP/1.1" 200 2303
+[14/Aug/2016 18:33:56] "GET /static/assets/css/font-awesome.min.css HTTP/1.1" 200 29063
+[14/Aug/2016 18:33:56] "GET /static/images/baby_sitting.jpeg HTTP/1.1" 200 2540745
+[14/Aug/2016 18:33:56] "GET /static/assets/css/images/overlay.png HTTP/1.1" 200 28136
+[14/Aug/2016 18:33:56] "GET /static/assets/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 200 71896
+[14/Aug/2016 18:33:56] "GET /static/images/baby_feet.jpg HTTP/1.1" 200 998241
+Not Found: /favicon.ico
+[14/Aug/2016 18:33:57] "GET /favicon.ico HTTP/1.1" 404 2274
+[14/Aug/2016 21:41:47] "GET / HTTP/1.1" 200 4449
+Not Found: /favicon.ico
+[14/Aug/2016 21:41:47] "GET /favicon.ico HTTP/1.1" 404 2274
+[14/Aug/2016 22:00:18] "GET / HTTP/1.1" 200 4373
+[14/Aug/2016 22:00:19] "GET /static/assets/css/main.css HTTP/1.1" 200 62195
+[14/Aug/2016 22:00:19] "GET /static/assets/js/jquery.min.js HTTP/1.1" 200 95957
+[14/Aug/2016 22:00:19] "GET /static/assets/js/jquery.dropotron.min.js HTTP/1.1" 200 5106
+[14/Aug/2016 22:00:19] "GET /static/assets/css/font-awesome.min.css HTTP/1.1" 200 29063
+[14/Aug/2016 22:00:19] "GET /static/assets/js/jquery.scrollgress.min.js HTTP/1.1" 200 2894
+[14/Aug/2016 22:00:19] "GET /static/assets/js/skel.min.js HTTP/1.1" 200 9085
+[14/Aug/2016 22:00:19] "GET /static/assets/js/util.js HTTP/1.1" 200 12433
+[14/Aug/2016 22:00:19] "GET /static/assets/js/main.js HTTP/1.1" 200 2303
+[14/Aug/2016 22:00:19] "GET /static/images/baby_sitting.jpeg HTTP/1.1" 200 2540745
+[14/Aug/2016 22:00:19] "GET /static/assets/css/images/overlay.png HTTP/1.1" 200 28136
+[14/Aug/2016 22:00:19] "GET /static/assets/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 200 71896
+[14/Aug/2016 22:00:19] "GET /static/images/baby_feet.jpg HTTP/1.1" 200 998241
+Not Found: /favicon.ico
+[14/Aug/2016 22:00:19] "GET /favicon.ico HTTP/1.1" 404 2274
+[14/Aug/2016 22:14:11] "GET / HTTP/1.1" 200 4366
+[14/Aug/2016 22:14:11] "GET /static/assets/css/main.css HTTP/1.1" 304 0
+[14/Aug/2016 22:14:11] "GET /static/assets/js/jquery.min.js HTTP/1.1" 304 0
+[14/Aug/2016 22:14:11] "GET /static/images/baby_sitting.jpeg HTTP/1.1" 304 0
+[14/Aug/2016 22:14:11] "GET /static/assets/js/jquery.dropotron.min.js HTTP/1.1" 304 0
+[14/Aug/2016 22:14:11] "GET /static/assets/js/jquery.scrollgress.min.js HTTP/1.1" 304 0
+[14/Aug/2016 22:14:11] "GET /static/assets/css/font-awesome.min.css HTTP/1.1" 304 0
+[14/Aug/2016 22:14:11] "GET /static/assets/js/skel.min.js HTTP/1.1" 304 0
+[14/Aug/2016 22:14:11] "GET /static/assets/js/main.js HTTP/1.1" 304 0
+[14/Aug/2016 22:14:11] "GET /static/assets/js/util.js HTTP/1.1" 304 0
+[14/Aug/2016 22:14:12] "GET /static/assets/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 304 0
+[14/Aug/2016 22:14:12] "GET /static/images/baby_feet.jpg HTTP/1.1" 304 0
+[14/Aug/2016 22:14:12] "GET /static/assets/css/images/overlay.png HTTP/1.1" 304 0
+[14/Aug/2016 22:14:21] "GET /signup/ HTTP/1.1" 200 3774
+[14/Aug/2016 22:14:26] "GET / HTTP/1.1" 200 4366
+[14/Aug/2016 22:30:44] "GET / HTTP/1.1" 200 4366
+Not Found: /favicon.ico
+[14/Aug/2016 22:30:44] "GET /favicon.ico HTTP/1.1" 404 2274
+Not Found: /apple-touch-icon-precomposed.png
+[14/Aug/2016 22:30:44] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 2337
+Not Found: /apple-touch-icon.png
+[14/Aug/2016 22:30:44] "GET /apple-touch-icon.png HTTP/1.1" 404 2301
+[14/Aug/2016 22:30:44] "GET / HTTP/1.1" 200 4366
+Not Found: /apple-touch-icon-precomposed.png
+[14/Aug/2016 22:30:44] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 2337
+Not Found: /apple-touch-icon.png
+[14/Aug/2016 22:30:44] "GET /apple-touch-icon.png HTTP/1.1" 404 2301
